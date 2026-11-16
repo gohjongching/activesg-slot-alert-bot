@@ -1,0 +1,16 @@
+[Unit]
+Description=ActiveSG Telegram Slot Alert Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+# Change this WorkingDirectory to where your project is cloned on the GCP VM
+WorkingDirectory=/root/tele-alert-bot
+ExecStart=/root/tele-alert-bot/venv/bin/python main.py
+Restart=always
+RestartSec=15
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

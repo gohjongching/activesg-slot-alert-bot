@@ -1,0 +1,23 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment secrets & tokens
+.env
+
+# Database & Cache
+*.db
+*.sqlite3
+__pycache__/
+*.pyc
+
+# Debug & Screenshots
+debug_*.png
+debug_*.html
+session_cookies.json
+
+# OS files
+.DS_Store
+Thumbs.db
